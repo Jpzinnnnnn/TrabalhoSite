@@ -12,7 +12,7 @@ header{
     align-items:center;
     padding:15px 40px;
 
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("academia.png");
+    background-image: url("academia.png");
     background-size: cover;
     background-position: center;
 }
@@ -82,38 +82,4 @@ footer{
     background:white;
     padding:40px;
     text-align:center;
-}
-
-.info-contato{
-    margin-bottom:20px;
-    font-size:18px;
-}
-
-.form-contato{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
-.form-contato input,
-.form-contato textarea{
-    width:300px;
-    padding:10px;
-    margin:5px;
-    border-radius:8px;
-    border:1px solid #ccc;
-}
-
-.form-contato textarea{
-    height:80px;
-}
-
-.form-contato button{
-    margin-top:10px;
-    padding:10px 20px;
-    border:none;
-    border-radius:10px;
-    background:#1e90ff;
-    color:white;
-    cursor:pointer;
 }
