@@ -2,6 +2,7 @@ body{
     font-family: Arial;
     margin:0;
     background-color:#f4f4f4;
+    overflow-x:hidden;
 }
 
 /* MENU */
@@ -15,10 +16,19 @@ header{
     background-image: url("academia.png");
     background-size: cover;
     background-position: center;
+
+    flex-wrap:wrap;
+    gap:15px;
 }
 
 .logo{
     height:70px;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
 nav a{
@@ -32,17 +42,29 @@ nav a{
 
 .banner{
     text-align:center;
-    padding:60px;
+    padding:80px 20px;
     background:#1e90ff;
+    color:white;
+}
+
+.banner h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.banner p{
+    font-size:20px;
+    margin-bottom:20px;
 }
 
 .banner button{
-    padding:10px 20px;
+    padding:12px 25px;
     border:none;
     border-radius:10px;
     background:#000000;
     color:white;
     cursor:pointer;
+    font-size:16px;
 }
 
 /* PLANOS */
@@ -50,16 +72,23 @@ nav a{
 .planos{
     display:flex;
     justify-content:center;
+    align-items:center;
+    gap:20px;
     margin:40px;
+    flex-wrap:wrap;
 }
 
 .plano{
     background:white;
-    padding:20px;
-    margin:10px;
-    width:200px;
+    padding:25px;
+    width:250px;
     text-align:center;
-    border-radius:10px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.plano h2{
+    font-size:32px;
 }
 
 .plano button{
@@ -68,8 +97,24 @@ nav a{
     padding:10px 20px;
     border-radius:10px;
     cursor:pointer;
+    color:white;
+    font-size:16px;
 }
 
+/* CONTATO */
+
+.contato{
+    background:white;
+    padding:40px 20px;
+    text-align:center;
+}
+
+.info-contato p{
+    font-size:18px;
+    margin:10px 0;
+}
+
+/* FOOTER */
 
 footer{
     text-align:center;
@@ -78,8 +123,51 @@ footer{
     padding:15px;
 }
 
-.contato{
-    background:white;
-    padding:40px;
-    text-align:center;
+/* RESPONSIVO CELULAR */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+        padding:20px;
+    }
+
+    nav{
+        margin-top:10px;
+    }
+
+    nav a{
+        margin:10px;
+        font-size:16px;
+    }
+
+    .banner{
+        padding:60px 20px;
+    }
+
+    .banner h2{
+        font-size:28px;
+    }
+
+    .banner p{
+        font-size:16px;
+    }
+
+    .planos{
+        margin:20px;
+    }
+
+    .plano{
+        width:100%;
+        max-width:320px;
+    }
+
+    .contato{
+        padding:30px 15px;
+    }
+
+    .info-contato p{
+        font-size:16px;
+    }
 }
